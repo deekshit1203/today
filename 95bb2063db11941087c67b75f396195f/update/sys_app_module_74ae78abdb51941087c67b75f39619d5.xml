@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Price Calculation">263ca8e3db11941087c67b75f3961983</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>NEW</link_type>
+        <map_page/>
+        <mobile_title>Create New</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_hak_price_calc_price_calculation</name>
+        <order>10</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_hak_price_calc.price_calculation_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>jonatan.horvath@halmstad.se</sys_created_by>
+        <sys_created_on>2020-06-15 12:01:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>74ae78abdb51941087c67b75f39619d5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Create New</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Price Calculation" source="x_hak_price_calc">95bb2063db11941087c67b75f396195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Price Calculation">95bb2063db11941087c67b75f396195f</sys_scope>
+        <sys_update_name>sys_app_module_74ae78abdb51941087c67b75f39619d5</sys_update_name>
+        <sys_updated_by>jonatan.horvath@halmstad.se</sys_updated_by>
+        <sys_updated_on>2020-06-23 05:50:47</sys_updated_on>
+        <timeline_page/>
+        <title>Create New</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

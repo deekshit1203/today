@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="interest" table="x_hak_price_calc_price_calculation" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>interest</element>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_id>8d1fd401db4e3450c65744fa13961993</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>interest</sys_name>
+            <sys_package display_value="Price Calculation" source="x_hak_price_calc">95bb2063db11941087c67b75f396195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Price Calculation">95bb2063db11941087c67b75f396195f</sys_scope>
+            <sys_update_name>sys_choice_x_hak_price_calc_price_calculation_interest</sys_update_name>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1,0 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cd1fd401db4e3450c65744fa1396198e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.01</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1,5 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>011fd401db4e3450c65744fa1396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.015</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2,0 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>411fd401db4e3450c65744fa1396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.02</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2,5 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>811fd401db4e3450c65744fa1396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.025</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>3,0 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c11fd401db4e3450c65744fa1396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.03</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>3,5 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>051fd401db4e3450c65744fa1396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.035</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>4,0 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>451fd401db4e3450c65744fa1396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.04</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>4,5 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>851fd401db4e3450c65744fa1396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.045</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>5,0 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c51fd401db4e3450c65744fa1396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.05</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>5,5 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>091fd401db4e3450c65744fa1396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.055</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>6,0 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>491fd401db4e3450c65744fa1396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.06</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>6,5 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>891fd401db4e3450c65744fa1396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.065</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>7,0 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c91fd401db4e3450c65744fa1396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.07</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>7,5 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0d1fd401db4e3450c65744fa1396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.075</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>8,0 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4d1fd401db4e3450c65744fa1396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.08</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>8,5 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8d1fd401db4e3450c65744fa1396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.085</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>9,0 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cd1fd401db4e3450c65744fa1396198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.09</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>9,5 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>011fd401db4e3450c65744fa13961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.095</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>interest</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>10,0 %</label>
+            <language>en</language>
+            <name>x_hak_price_calc_price_calculation</name>
+            <sequence>99</sequence>
+            <synonyms/>
+            <sys_created_by>deekshitulu.malladi@snc</sys_created_by>
+            <sys_created_on>2021-08-16 14:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>411fd401db4e3450c65744fa13961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>deekshitulu.malladi@snc</sys_updated_by>
+            <sys_updated_on>2021-08-16 14:27:13</sys_updated_on>
+            <value>0.1</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

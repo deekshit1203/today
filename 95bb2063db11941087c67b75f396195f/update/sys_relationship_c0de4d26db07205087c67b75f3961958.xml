@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>cmdb_model</basic_apply_to>
+        <basic_query_from>sc_cat_item</basic_query_from>
+        <insert_callback/>
+        <name>Catalog items</name>
+        <query_from/>
+        <query_with><![CDATA[current.addQuery('model', parent.sys_id);]]></query_with>
+        <reference_field>model</reference_field>
+        <related_list/>
+        <simple_reference>true</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>jonatan.horvath@halmstad.se</sys_created_by>
+        <sys_created_on>2021-03-25 06:39:55</sys_created_on>
+        <sys_id>c0de4d26db07205087c67b75f3961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Catalog items</sys_name>
+        <sys_package display_value="Price Calculation" source="x_hak_price_calc">95bb2063db11941087c67b75f396195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Price Calculation">95bb2063db11941087c67b75f396195f</sys_scope>
+        <sys_update_name>sys_relationship_c0de4d26db07205087c67b75f3961958</sys_update_name>
+        <sys_updated_by>jonatan.horvath@halmstad.se</sys_updated_by>
+        <sys_updated_on>2021-03-25 06:39:55</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=c0de4d26db07205087c67b75f3961958"/>
+</record_update>

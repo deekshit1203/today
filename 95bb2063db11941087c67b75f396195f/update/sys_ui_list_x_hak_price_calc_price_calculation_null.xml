@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_hak_price_calc_price_calculation" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_hak_price_calc_price_calculation" element="NULL" name="x_hak_price_calc_price_calculation" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f82830c2dba91050b384e0a1ca9619cf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>jonatan.horvath@halmstad.se</sys_created_by>
+            <sys_created_on>2020-06-23 05:56:54</sys_created_on>
+            <sys_id>b42830c2dba91050b384e0a1ca9619d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jonatan.horvath@halmstad.se</sys_updated_by>
+            <sys_updated_on>2020-06-23 05:56:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="x_hak_price_calc_price_calculation" element="NULL" name="x_hak_price_calc_price_calculation" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f82830c2dba91050b384e0a1ca9619cf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>jonatan.horvath@halmstad.se</sys_created_by>
+            <sys_created_on>2020-06-23 05:56:54</sys_created_on>
+            <sys_id>3c2830c2dba91050b384e0a1ca9619d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jonatan.horvath@halmstad.se</sys_updated_by>
+            <sys_updated_on>2020-06-23 05:56:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>comments</element>
+            <list_id display_value="x_hak_price_calc_price_calculation" element="NULL" name="x_hak_price_calc_price_calculation" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f82830c2dba91050b384e0a1ca9619cf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>jonatan.horvath@halmstad.se</sys_created_by>
+            <sys_created_on>2020-06-23 05:56:54</sys_created_on>
+            <sys_id>3028b4c2dba91050b384e0a1ca9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jonatan.horvath@halmstad.se</sys_updated_by>
+            <sys_updated_on>2020-06-23 05:56:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="x_hak_price_calc_price_calculation" element="NULL" name="x_hak_price_calc_price_calculation" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f82830c2dba91050b384e0a1ca9619cf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>jonatan.horvath@halmstad.se</sys_created_by>
+            <sys_created_on>2020-06-23 05:56:54</sys_created_on>
+            <sys_id>b028b4c2dba91050b384e0a1ca9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jonatan.horvath@halmstad.se</sys_updated_by>
+            <sys_updated_on>2020-06-23 05:56:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_by</element>
+            <list_id display_value="x_hak_price_calc_price_calculation" element="NULL" name="x_hak_price_calc_price_calculation" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f82830c2dba91050b384e0a1ca9619cf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>jonatan.horvath@halmstad.se</sys_created_by>
+            <sys_created_on>2020-06-23 05:56:54</sys_created_on>
+            <sys_id>3428b4c2dba91050b384e0a1ca9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jonatan.horvath@halmstad.se</sys_updated_by>
+            <sys_updated_on>2020-06-23 05:56:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_hak_price_calc_price_calculation" element="NULL" name="x_hak_price_calc_price_calculation" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f82830c2dba91050b384e0a1ca9619cf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>jonatan.horvath@halmstad.se</sys_created_by>
+            <sys_created_on>2020-06-23 05:56:54</sys_created_on>
+            <sys_id>b428b4c2dba91050b384e0a1ca9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jonatan.horvath@halmstad.se</sys_updated_by>
+            <sys_updated_on>2020-06-23 05:56:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_by</element>
+            <list_id display_value="x_hak_price_calc_price_calculation" element="NULL" name="x_hak_price_calc_price_calculation" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f82830c2dba91050b384e0a1ca9619cf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>jonatan.horvath@halmstad.se</sys_created_by>
+            <sys_created_on>2020-06-23 05:56:54</sys_created_on>
+            <sys_id>3828b4c2dba91050b384e0a1ca9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jonatan.horvath@halmstad.se</sys_updated_by>
+            <sys_updated_on>2020-06-23 05:56:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_hak_price_calc_price_calculation</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>jonatan.horvath@halmstad.se</sys_created_by>
+            <sys_created_on>2020-06-23 05:56:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f82830c2dba91050b384e0a1ca9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_hak_price_calc_price_calculation</sys_name>
+            <sys_package display_value="Price Calculation" source="x_hak_price_calc">95bb2063db11941087c67b75f396195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Price Calculation">95bb2063db11941087c67b75f396195f</sys_scope>
+            <sys_update_name>sys_ui_list_x_hak_price_calc_price_calculation_null</sys_update_name>
+            <sys_updated_by>jonatan.horvath@halmstad.se</sys_updated_by>
+            <sys_updated_on>2020-06-23 05:56:54</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

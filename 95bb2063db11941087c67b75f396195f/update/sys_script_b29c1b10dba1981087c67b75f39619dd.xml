@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_hak_price_calc_price_calculation</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Sum Price Calculation</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	//Denna funktionen summerar alla fält på Price Calculation formuläret och agerar som en check för andra BR och kopplade modeller när en justering sker på ett record.
+	
+	var priceCheck;
+
+	var	workCost = current.work_cost;
+	var	unpackageCost = current.unpackage_cost;
+	var	theftmarkCost = current.theftmark_cost;
+	var	configurationCost = current.configuration_cost;
+	var	carePackCost = current.care_pack_cost;
+	var	licenceCost = current.licence_cost;
+	var	accessoriesCost = current.accessories_cost;
+	var	interest = current.interest;
+	var	interestRate = current.interest_rate;
+	var	marginal =current.marginal;
+	var	invoiceFrequency = current.getValue('invoice_frequency');
+	var	months = current.getValue('months');
+	var generalCost = current.general_cost;
+	var savingsDemand = 0;
+
+
+	if (current.add_savings_demand != 0) {
+		savingsDemand = 1;
+	}
+
+	priceCheck = +months + +workCost + +unpackageCost + +theftmarkCost + +configurationCost + +carePackCost + +licenceCost + +accessoriesCost + +invoiceFrequency + +marginal + +interestRate + +interest + +generalCost + +savingsDemand;
+
+		
+	var gr = new GlideRecord('cmdb_hardware_product_model');
+	gr.addQuery('x_hak_price_calc_applied_price_calculation', current.sys_id);
+	gr.query();
+
+	while (gr.next()){
+		gr.setValue('x_hak_price_calc_price_calculation_check', priceCheck);
+		gr.update();		
+	}
+	
+	current.setValue('Sum', priceCheck);
+	current.update();
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>jonatan.horvath@halmstad.se</sys_created_by>
+        <sys_created_on>2020-06-18 07:32:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b29c1b10dba1981087c67b75f39619dd</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Sum Price Calculation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Price Calculation" source="x_hak_price_calc">95bb2063db11941087c67b75f396195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Price Calculation">95bb2063db11941087c67b75f396195f</sys_scope>
+        <sys_update_name>sys_script_b29c1b10dba1981087c67b75f39619dd</sys_update_name>
+        <sys_updated_by>jonatan.horvath@halmstad.se</sys_updated_by>
+        <sys_updated_on>2021-06-21 05:54:34</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=b29c1b10dba1981087c67b75f39619dd"/>
+</record_update>

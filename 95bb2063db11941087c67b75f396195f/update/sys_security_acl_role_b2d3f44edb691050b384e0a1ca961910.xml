@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>jonatan.horvath@halmstad.se</sys_created_by>
+        <sys_created_on>2020-06-23 05:38:22</sys_created_on>
+        <sys_id>b2d3f44edb691050b384e0a1ca961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_hak_price_calc_price_calculation.itil</sys_name>
+        <sys_package display_value="Price Calculation" source="x_hak_price_calc">95bb2063db11941087c67b75f396195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Price Calculation">95bb2063db11941087c67b75f396195f</sys_scope>
+        <sys_security_acl display_value="x_hak_price_calc_price_calculation">be3ca8e3db11941087c67b75f39619a5</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_b2d3f44edb691050b384e0a1ca961910</sys_update_name>
+        <sys_updated_by>jonatan.horvath@halmstad.se</sys_updated_by>
+        <sys_updated_on>2020-06-23 05:38:22</sys_updated_on>
+        <sys_user_role display_value="itil" name="itil">282bf1fac6112285017366cb5f867469</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

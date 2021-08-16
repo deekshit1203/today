@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_hak_price_calc.ConsumablePrice</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>ConsumablePrice</name>
+        <script><![CDATA[var ConsumablePrice = Class.create();
+ConsumablePrice.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	getPrices: function() {
+		
+		var model = this.getParameter('sysparm_sysid');
+		
+		var gr = new GlideRecord('cmdb_model');
+		var answer = {};
+		if (gr.get(model)) {
+			answer.ConsumablePrice = gr.getValue('cost');
+		}
+		
+		return JSON.stringify(answer);
+	},
+	
+	
+    type: 'ConsumablePrice'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>jonatan.horvath@halmstad.se</sys_created_by>
+        <sys_created_on>2021-02-16 12:55:37</sys_created_on>
+        <sys_id>9d42c436db56e41087c67b75f396198b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>ConsumablePrice</sys_name>
+        <sys_package display_value="Price Calculation" source="x_hak_price_calc">95bb2063db11941087c67b75f396195f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Price Calculation">95bb2063db11941087c67b75f396195f</sys_scope>
+        <sys_update_name>sys_script_include_9d42c436db56e41087c67b75f396198b</sys_update_name>
+        <sys_updated_by>jonatan.horvath@halmstad.se</sys_updated_by>
+        <sys_updated_on>2021-02-19 08:39:04</sys_updated_on>
+    </sys_script_include>
+</record_update>

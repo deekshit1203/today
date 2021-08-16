@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>cmdb_hardware_product_model</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="cmdb_hardware_product_model">x_hak_price_calc_average_costVALCHANGESjavascript:global.getCurrencyFilter('cmdb_hardware_product_model','x_hak_price_calc_average_cost', 'SEK;SEK')^x_hak_price_calc_average_cost!=javascript:global.getCurrencyFilter('cmdb_hardware_product_model','x_hak_price_calc_average_cost', 'SEK;0')^NQx_hak_price_calc_applied_price_calculationVALCHANGES^x_hak_price_calc_applied_price_calculationISNOTEMPTY^NQx_hak_price_calc_price_calculation_checkVALCHANGES^EQ<item endquery="false" field="x_hak_price_calc_average_cost" goto="false" newquery="false" operator="VALCHANGES" or="false" value="javascript:global.getCurrencyFilter('cmdb_hardware_product_model','x_hak_price_calc_average_cost', 'SEK;SEK')"/>
+            <item endquery="false" field="x_hak_price_calc_average_cost" goto="false" newquery="false" operator="!=" or="false" value="javascript:global.getCurrencyFilter('cmdb_hardware_product_model','x_hak_price_calc_average_cost', 'SEK;0')"/>
+            <item endquery="false" field="x_hak_price_calc_applied_price_calculation" goto="false" newquery="true" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="x_hak_price_calc_applied_price_calculation" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="x_hak_price_calc_price_calculation_check" goto="false" newquery="true" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update OTC and SUB for HW and Cat item</name>
+        <order>300</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	//Har man applicerat en Price Calulation på en Hardware Model samt gjort en koppling mellan Hardware Model och ett Catalog Item, så uppdateras priset för "One Time charge" samt "subscription price" för hardware model NÄR antingen lagersaldot för Hardware model ändras, applicerad price calulation ändras eller när summeringen på en price calculation ändras.
+
+	var priceCalculation = current.x_hak_price_calc_applied_price_calculation;
+	var productModel = current.getUniqueValue();
+
+	var otcPrice;
+	var subPrice;
+	var workCost;
+	var unpackageCost;
+	var theftmarkCost;
+	var configurationCost;
+	var carePackCost;
+	var licenceCost;
+	var accessoriesCost;
+	var generalCost;
+	var interestRate;
+	var marginal;
+	var invoiceFrequency;
+	var months;
+	var savingsDemand;
+	var averageCost = current.x_hak_price_calc_average_cost;
+
+	workCost = current.x_hak_price_calc_applied_price_calculation.work_cost;
+	unpackageCost = current.x_hak_price_calc_applied_price_calculation.unpackage_cost;
+	theftmarkCost = current.x_hak_price_calc_applied_price_calculation.theftmark_cost;
+	configurationCost = current.x_hak_price_calc_applied_price_calculation.configuration_cost;
+	carePackCost = current.x_hak_price_calc_applied_price_calculation.care_pack_cost;
+	licenceCost = current.x_hak_price_calc_applied_price_calculation.licence_cost;
+	accessoriesCost = current.x_hak_price_calc_applied_price_calculation.accessories_cost;
+	generalCost = current.x_hak_price_calc_applied_price_calculation.general_cost;
+	interestRate = current.x_hak_price_calc_applied_price_calculation.interest_rate;
+	marginal = current.x_hak_price_calc_applied_price_calculation.marginal;
+	invoiceFrequency = current.x_hak_price_calc_applied_price_calculation.invoice_frequency;
+	months = current.x_hak_price_calc_applied_price_calculation.months;
+	savingsDemand = current.x_hak_price_calc_applied_price_calculation.add_savings_demand;
+
+
+	otcPrice = +averageCost + +workCost + +unpackageCost + +theftmarkCost + +configurationCost + +carePackCost + +licenceCost + +accessoriesCost + +generalCost;
+	
+	var marginalSummary = 0;
+	var interestRateSummary = 0;
+	var subSummary = 0;
+	
+	subPrice = 0;
+	subPrice = +averageCost + +unpackageCost + +theftmarkCost + +configurationCost + +carePackCost + +licenceCost + +accessoriesCost + +generalCost;
+		
+	marginalSummary += subPrice;
+	marginalSummary *= marginal;
+	
+	interestRateSummary += subPrice;
+	interestRateSummary *= interestRate;
+	interestRateSummary -= subPrice;
+	
+	subPrice += +marginalSummary + +interestRateSummary + +workCost;
+	subPrice *= invoiceFrequency;
+	subPrice /= months;
+	
+	if (savingsDemand == true) {
+		var savingscost = 0;
+		savingscost = subPrice * (months/12) / months;
+		subPrice += savingscost;
+	}
+	
+	otcPrice = Math.ceil(otcPrice / 5) * 5;
+	subPrice = Math.ceil(subPrice / 5) * 5;
+
+	current.setValue('x_hak_price_calc_one_time_charge_price', otcPrice);
+	current.setValue('x_hak_price_calc_subscription_cost', subPrice);
+	current.update();
+
+
+	//Används automatiska priser på kopplade Catalog items så uppdateras priset där också.
+
+	var grCat = new GlideRecord('sc_cat_item');
+	grCat.addQuery('model', productModel);
+	grCat.addQuery('x_hak_price_calc_use_calculated_price', 'true');
+	grCat.query();
+
+	while(grCat.next()) {
+		if(grCat.getValue('u_sales_model') == 'One-time charge') {
+			grCat.setValue('price', otcPrice);
+			grCat.update();
+		}
+		if(grCat.getValue('u_sales_model') == 'Subscription') {
+			grCat.setValue('recurring_price', subPrice);
+			grCat.update();
+		}
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>jonatan.horvath@halmstad.se</sys_created_by>
+        <sys_created_on>2020-06-18 06:05:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7f69cf58db21981087c67b75f3961941</sys_id>
+        <sys_mod_count>67</sys_mod_count>
+        <sys_name>Update OTC and SUB for HW and Cat item</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Price Calculation" source="x_hak_price_calc">95bb2063db11941087c67b75f396195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Price Calculation">95bb2063db11941087c67b75f396195f</sys_scope>
+        <sys_update_name>sys_script_7f69cf58db21981087c67b75f3961941</sys_update_name>
+        <sys_updated_by>jonatan.horvath@halmstad.se</sys_updated_by>
+        <sys_updated_on>2021-06-29 11:29:36</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=7f69cf58db21981087c67b75f3961941"/>
+</record_update>

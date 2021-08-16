@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_help_content">
+    <sys_embedded_help_content action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <content><![CDATA[<h1 class="title sectiontitle topictitle1">Läs denna artikel för hjälp av formuläret:<br /><br /></h1>
+<p><a title="KB: Användning av Priskalkyl (Price Calculation)" href="https://halmstad.service-now.com/kb_view.do?sysparm_article&#61;KB0011355" target="_blank" rel="noopener">KB: Användning av Priskalkyl (Price Calculation)</a></p>]]></content>
+        <last_sync/>
+        <modifier>normal</modifier>
+        <name>x_hak_price_calc_price_calculation-normal</name>
+        <page>x_hak_price_calc_price_calculation</page>
+        <product>1</product>
+        <qualifier/>
+        <role/>
+        <role_order>1000</role_order>
+        <snc_created>false</snc_created>
+        <sys_class_name>sys_embedded_help_content</sys_class_name>
+        <sys_created_by>jonatan.horvath@halmstad.se</sys_created_by>
+        <sys_created_on>2021-04-29 12:45:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>10123a39db37a410ddb9231cd396193c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_hak_price_calc_price_calculation-normal</sys_name>
+        <sys_package display_value="Price Calculation" source="x_hak_price_calc">95bb2063db11941087c67b75f396195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Price Calculation">95bb2063db11941087c67b75f396195f</sys_scope>
+        <sys_update_name>sys_embedded_help_content_10123a39db37a410ddb9231cd396193c</sys_update_name>
+        <sys_updated_by>jonatan.horvath@halmstad.se</sys_updated_by>
+        <sys_updated_on>2021-04-29 12:46:46</sys_updated_on>
+        <version>q</version>
+    </sys_embedded_help_content>
+    <sys_translated_text action="delete_multiple" query="documentkey=10123a39db37a410ddb9231cd396193c"/>
+</record_update>

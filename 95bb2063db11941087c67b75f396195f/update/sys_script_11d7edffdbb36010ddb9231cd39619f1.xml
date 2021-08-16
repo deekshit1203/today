@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_hak_price_calc_price_calculation</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_hak_price_calc_price_calculation">interestVALCHANGES^NQmonthsVALCHANGES^EQ<item display_value="-- None --" endquery="false" field="interest" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item display_value="-- None --" endquery="false" field="months" goto="false" newquery="true" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update Interest rate</name>
+        <order>250</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+
+	//OBS!!! GRUNDFORMEL FRÅN HÅKAN A: interestRate = interest / (1-(1+interest) ^- (months/12)) / (1/(months/12)); 
+	
+	var interest = parseFloat(current.getValue('interest'));
+	var months = parseFloat(current.getValue('months'));
+	var base = parseFloat(((1+interest)).toFixed(2));
+	var exp = -(months/12);
+	var elevated = Math.pow(base, exp);
+	//	gs.addInfoMessage("elevated =" + elevated);
+	//	gs.addInfoMessage("base =" + base);
+	//	gs.addInfoMessage("exp =" + exp);
+	var finalRate = parseFloat(interest / (1-elevated) / (1/(months/12)));
+
+
+	current.setValue('interest_rate', finalRate);
+	current.update();
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>jonatan.horvath@halmstad.se</sys_created_by>
+        <sys_created_on>2021-05-05 12:36:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>11d7edffdbb36010ddb9231cd39619f1</sys_id>
+        <sys_mod_count>57</sys_mod_count>
+        <sys_name>Update Interest rate</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Price Calculation" source="x_hak_price_calc">95bb2063db11941087c67b75f396195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Price Calculation">95bb2063db11941087c67b75f396195f</sys_scope>
+        <sys_update_name>sys_script_11d7edffdbb36010ddb9231cd39619f1</sys_update_name>
+        <sys_updated_by>jonatan.horvath@halmstad.se</sys_updated_by>
+        <sys_updated_on>2021-06-21 09:04:44</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=11d7edffdbb36010ddb9231cd39619f1"/>
+</record_update>

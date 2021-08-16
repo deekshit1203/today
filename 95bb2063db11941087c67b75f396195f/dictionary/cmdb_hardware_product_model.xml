@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="cmdb_model" label="Modèle de matériel" max_length="40" name="cmdb_hardware_product_model" sizeclass="80" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false,ref_ac_columns=number;sys_created_on,ref_ac_columns_search=true,ref_auto_completer=AJAXTableCompleter,readonly_clickthrough=true" label="Applied price calculation" max_length="32" name="x_hak_price_calc_applied_price_calculation" reference="x_hak_price_calc_price_calculation" reference_floats="true" type="reference"/>
+        <element label="Average cost" max_length="38" name="x_hak_price_calc_average_cost" read_only="true" type="currency"/>
+        <element default="0" label="In stock" max_length="40" name="x_hak_price_calc_in_stock" read_only="true" type="integer"/>
+        <element label="One-time charge price" max_length="38" name="x_hak_price_calc_one_time_charge_price" read_only="true" type="currency"/>
+        <element label="Price Calculation check" max_length="100" name="x_hak_price_calc_price_calculation_check" type="string"/>
+        <element label="Subscription cost" max_length="38" name="x_hak_price_calc_subscription_cost" read_only="true" type="currency"/>
+    </element>
+</database>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Price Calculation" max_length="40" name="x_hak_price_calc_price_calculation" type="collection">
+        <element default="0" label="Accessories cost" max_length="20" name="accessories_cost" type="currency"/>
+        <element hint="Besparingskrav&#13;&#10;Om sant =&#13;&#10;Hyrkostnaden för en produkt får ett pålägg enligt formeln:&#13;&#10;SubPriset * (Months/Period / 12) / Months/Period&#13;&#10;Exempel&#13;&#10;320kr/månad * (48månader / 12) / 48 månader =&#13;&#10;320 * 4 / 48 = 26&#13;&#10;320 + 26 ~= 350 &#13;&#10;Avrundat uppåt till närmsta 10tal." label="Add savings demand" max_length="40" name="add_savings_demand" type="boolean"/>
+        <element default="0" label="Care pack cost" max_length="20" name="care_pack_cost" type="currency"/>
+        <element label="Comments" max_length="4000" name="comments" type="string"/>
+        <element default="0" label="Configuration cost" max_length="38" name="configuration_cost" type="currency"/>
+        <element default="0" label="Device cost" max_length="20" name="device_cost" type="currency"/>
+        <element attributes="omit_sys_original=true" default="0" label="General cost" max_length="20" name="general_cost" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="General cost comments" max_length="1000" name="general_cost_comments" type="string"/>
+        <element choice="1" label="Interest" mandatory="true" max_length="40" name="interest" type="string">
+            <choice>
+                <element inactive_on_update="false" label="1,0 %" value="0.01"/>
+                <element inactive_on_update="false" label="1,5 %" value="0.015"/>
+                <element inactive_on_update="false" label="2,0 %" value="0.02"/>
+                <element inactive_on_update="false" label="2,5 %" value="0.025"/>
+                <element inactive_on_update="false" label="3,0 %" value="0.03"/>
+                <element inactive_on_update="false" label="3,5 %" value="0.035"/>
+                <element inactive_on_update="false" label="4,0 %" value="0.04"/>
+                <element inactive_on_update="false" label="4,5 %" value="0.045"/>
+                <element inactive_on_update="false" label="5,0 %" value="0.05"/>
+                <element inactive_on_update="false" label="5,5 %" value="0.055"/>
+                <element inactive_on_update="false" label="6,0 %" value="0.06"/>
+                <element inactive_on_update="false" label="6,5 %" value="0.065"/>
+                <element inactive_on_update="false" label="7,0 %" value="0.07"/>
+                <element inactive_on_update="false" label="7,5 %" value="0.075"/>
+                <element inactive_on_update="false" label="8,0 %" value="0.08"/>
+                <element inactive_on_update="false" label="8,5 %" value="0.085"/>
+                <element inactive_on_update="false" label="9,0 %" value="0.09"/>
+                <element inactive_on_update="false" label="9,5 %" value="0.095"/>
+                <element inactive_on_update="false" label="10,0 %" sequence="99" value="0.1"/>
+            </choice>
+        </element>
+        <element label="Interest rate" max_length="40" name="interest_rate" read_only="true" type="string"/>
+        <element choice="1" label="Invoice frequency" mandatory="true" max_length="40" name="invoice_frequency" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Månadsvis" language="sv" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="Monthly" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="Kvartal" language="sv" sequence="20" value="3"/>
+                <element inactive_on_update="false" label="Quarterly" sequence="20" value="3"/>
+                <element inactive_on_update="false" label="Tertial" language="sv" sequence="30" value="4"/>
+                <element inactive_on_update="false" label="Tertial" sequence="30" value="4"/>
+                <element inactive_on_update="false" label="Half year" sequence="40" value="6"/>
+                <element inactive_on_update="false" label="Halvår" language="sv" sequence="40" value="6"/>
+                <element inactive_on_update="false" label="Årvis" language="sv" sequence="50" value="12"/>
+                <element inactive_on_update="false" label="Yearly" sequence="50" value="12"/>
+            </choice>
+        </element>
+        <element default="0" label="Licence cost" max_length="20" name="licence_cost" type="currency"/>
+        <element choice="1" label="Marginal" mandatory="true" max_length="40" name="marginal" type="string">
+            <choice>
+                <element inactive_on_update="false" label="0,5 %" value="0.005"/>
+                <element inactive_on_update="false" label="1,0 %" value="0.01"/>
+                <element inactive_on_update="false" label="1,5 %" value="0.015"/>
+                <element inactive_on_update="false" label="2,0 %" value="0.02"/>
+                <element inactive_on_update="false" label="2,5 %" value="0.025"/>
+                <element inactive_on_update="false" label="3,0 %" value="0.03"/>
+                <element inactive_on_update="false" label="3,5 %" value="0.035"/>
+                <element inactive_on_update="false" label="4,0 %" value="0.04"/>
+                <element inactive_on_update="false" label="4,5 %" value="0.045"/>
+                <element inactive_on_update="false" label="5,0 %" value="0.05"/>
+                <element inactive_on_update="false" label="5,5 %" value="0.055"/>
+                <element inactive_on_update="false" label="6,0 %" value="0.06"/>
+                <element inactive_on_update="false" label="6,5 %" value="0.065"/>
+                <element inactive_on_update="false" label="7,0 %" value="0.07"/>
+                <element inactive_on_update="false" label="7,5 %" value="0.075"/>
+                <element inactive_on_update="false" label="8,0 %" value="0.08"/>
+                <element inactive_on_update="false" label="8,5 %" value="0.085"/>
+                <element inactive_on_update="false" label="9,0 %" value="0.09"/>
+                <element inactive_on_update="false" label="9,5 %" value="0.095"/>
+                <element inactive_on_update="false" label="10,0 %" sequence="10" value="0.10"/>
+            </choice>
+        </element>
+        <element choice="1" label="Months" mandatory="true" max_length="40" name="months" type="string">
+            <choice>
+                <element inactive_on_update="false" label="12 månader" language="sv" sequence="0" value="12"/>
+                <element inactive_on_update="false" label="12 months" sequence="0" value="12"/>
+                <element inactive_on_update="false" label="24 månader" language="sv" sequence="1" value="24"/>
+                <element inactive_on_update="false" label="24 months" sequence="1" value="24"/>
+                <element inactive_on_update="false" label="36 månader" language="sv" sequence="2" value="36"/>
+                <element inactive_on_update="false" label="36 months" sequence="2" value="36"/>
+                <element inactive_on_update="false" label="48 månader" language="sv" sequence="3" value="48"/>
+                <element inactive_on_update="false" label="48 months" sequence="3" value="48"/>
+                <element inactive_on_update="false" label="60 månader" language="sv" sequence="4" value="60"/>
+                <element inactive_on_update="false" label="60 months" sequence="4" value="60"/>
+                <element inactive_on_update="false" label="72 månader" language="sv" sequence="5" value="72"/>
+                <element inactive_on_update="false" label="72 months" sequence="5" value="72"/>
+                <element inactive_on_update="false" label="84 månader" language="sv" sequence="6" value="84"/>
+                <element inactive_on_update="false" label="84 months" sequence="6" value="84"/>
+                <element inactive_on_update="false" label="96 månader" language="sv" sequence="7" value="96"/>
+                <element inactive_on_update="false" label="96 months" sequence="7" value="96"/>
+                <element inactive_on_update="false" label="108 månader" language="sv" sequence="8" value="108"/>
+                <element inactive_on_update="false" label="108 months" sequence="8" value="108"/>
+                <element inactive_on_update="false" label="120 månader" language="sv" sequence="9" value="120"/>
+                <element inactive_on_update="false" label="120 months" sequence="9" value="120"/>
+            </choice>
+        </element>
+        <element label="Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="OTC Price" max_length="20" name="otc_price" type="currency"/>
+        <element label="SUB Price" max_length="20" name="sub_price" type="currency"/>
+        <element default="0" label="Sum" max_length="100" name="sum" read_only="true" type="string"/>
+        <element default="0" label="Theftmark cost" max_length="20" name="theftmark_cost" type="currency"/>
+        <element default="0" label="Unpackage cost" max_length="20" name="unpackage_cost" type="currency"/>
+        <element default="0" label="Work cost" max_length="20" name="work_cost" type="currency"/>
+    </element>
+</database>
